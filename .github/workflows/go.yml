@@ -24,9 +24,10 @@ jobs:
 
     - name: Build
       run: go build -v ./...  #./... pattern indicates that Go should build all packages in the current directory and its subdirectories.
-
-    - name: Run
-      run: ./hello            #After build, If you run your application in linux or mac try .mod_name else if you use windows use mod_name.exe
+ 
+ # After build, If you run your application in linux or mac try .mod_name else if you use windows use mod_name.exe
+ #  - name: Run
+ #    run: ./hello            
 
     - name: Test
       run: go test -v ./...   #If you want to test your go program created a go test file.
